@@ -1,0 +1,16 @@
+{
+    "name": "webit/wwo-local-weather",
+    "description": "World Weather Online Local Weather API PHP implementation",
+    "type" : "library",
+    "licence" : "MIT",
+    "keywords" : "weather, weather api, wwo",
+    "authors" : [{
+    	"name" : "Daniel Bojdo", "email" : "daniel.bojdo@web-it.eu"
+    }],
+    "autoload": {
+        "psr-0": { "Webit\\Weather\\WorldWeather\\LocalWeather": "lib/" }
+    },
+    "require": {
+        "php": ">=5.3.3"
+    }
+}
