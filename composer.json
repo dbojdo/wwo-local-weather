@@ -3,7 +3,7 @@
     "description": "World Weather Online Local Weather API PHP implementation",
     "type" : "library",
     "license" : "MIT",
-    "keywords" : "weather, weather api, wwo",
+    "keywords" : ["weather", "weather api", "wwo"],
     "authors" : [{
     	"name" : "Daniel Bojdo", "email" : "daniel.bojdo@web-it.eu"
     }],
