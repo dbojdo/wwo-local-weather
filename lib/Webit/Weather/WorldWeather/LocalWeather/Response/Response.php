@@ -1,7 +1,7 @@
 <?php
 namespace Webit\Weather\WorldWeather\LocalWeather\Response;
 
-use Webit\Weather\WorldWeather\LocalWeather\Api\Weather\WeatherInterface;
+use Webit\Weather\WeatherApi\Api\WeatherInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Api\Response\RequestInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Api\Response\ResponseInterface;
 

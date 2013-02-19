@@ -1,8 +1,7 @@
 <?php
 namespace Webit\Weather\WorldWeather\LocalWeather\Weather\ConditionCodeProvider;
 
-use Webit\Weather\WorldWeather\LocalWeather\Api\Weather\ConditionCodeProviderInterface;
-use Webit\Weather\WorldWeather\LocalWeather\Weather\ConditionCode;
+use Webit\Weather\WeatherApi\Api\ConditionCodeProviderInterface;
 
 class XmlConditionCodeProvider implements ConditionCodeProviderInterface {	
 	/**
