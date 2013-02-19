@@ -37,7 +37,7 @@ class XmlConditionCodeProvider implements ConditionCodeProviderInterface {
 			}
 		}
 		
-		$refClass = new \ReflectionClass('Webit\Weather\WorldWeather\LocalWeather\Weather\ConditionCode');
+		$refClass = new \ReflectionClass('Webit\Weather\WeatherApi\ConditionCode');
 		$conditionCode = $refClass->newInstanceArgs($arArguments);
 		
 		return $conditionCode;

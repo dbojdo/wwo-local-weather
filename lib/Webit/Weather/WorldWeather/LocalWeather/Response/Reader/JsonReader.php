@@ -1,32 +1,21 @@
 <?php
+
 namespace Webit\Weather\WorldWeather\LocalWeather\Response\Reader;
 
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Precipitation;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Visibility;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Pressure;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Humidity;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Cloudcover;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\WindSpeed;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\WindDirection;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Wind;
-
+use Webit\Weather\WeatherApi\Api\ConditionCodeProviderInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Response\Request;
-
 use Webit\Weather\WorldWeather\LocalWeather\Api\Response\ReaderInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Response\Response;
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Measure\Temperature;
-
-use Webit\Weather\WorldWeather\LocalWeather\Weather\Weather;
-
-use Webit\Weather\WorldWeather\LocalWeather\Api\Weather\ConditionCodeProviderInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Weather\ConditionCodeProvider\StaticConditionCodeProvider;
+use Webit\Weather\WeatherApi\Wind;
+use Webit\Weather\WeatherApi\Measure\WindSpeed;
+use Webit\Weather\WeatherApi\Measure\WindDirection;
+use Webit\Weather\WeatherApi\Measure\Temperature;
+use Webit\Weather\WeatherApi\Measure\Precipitation;
+use Webit\Weather\WeatherApi\Measure\Visibility;
+use Webit\Weather\WeatherApi\Measure\Pressure;
+use Webit\Weather\WeatherApi\Measure\Humidity;
+use Webit\Weather\WeatherApi\Measure\Cloudcover;
 
 class JsonReader implements ReaderInterface {
 	/**
@@ -169,7 +158,7 @@ class JsonReader implements ReaderInterface {
 		// icon url
 		$arArguments[] = $objWeather->weatherIconUrl[0]->value;
 		
-		$refClass = new \ReflectionClass('Webit\Weather\WorldWeather\LocalWeather\Weather\Weather');
+		$refClass = new \ReflectionClass('Webit\Weather\WeatherApi\Weather');
 		$weather = $refClass->newInstanceArgs($arArguments);
 		
 		return $weather;
