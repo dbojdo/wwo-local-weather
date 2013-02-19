@@ -11,6 +11,7 @@
         "psr-0": { "Webit\\Weather\\WorldWeather\\LocalWeather": "lib/" }
     },
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "webit/weather-api" : "dev-master"
     }
 }
