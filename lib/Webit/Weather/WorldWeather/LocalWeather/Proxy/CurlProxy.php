@@ -8,7 +8,7 @@ use Webit\Weather\WorldWeather\LocalWeather\Api\Request\RequestInterface;
 use Webit\Weather\WorldWeather\LocalWeather\Response\Reader\ReaderFactory;
 
 class CurlProxy implements ProxyInterface {
-	protected $url = 'http://free.worldweatheronline.com/feed/weather.ashx';
+	protected $url = 'http://api.worldweatheronline.com/free/v1/weather.ashx';
 	
 	protected $curl;
 	
